@@ -1,0 +1,29 @@
+<!--Add ability to input location as address-->
+
+<div selectable-text style="height: 100%">
+    <h1>Click on your pet's last known location</h1> <!--NOT SHOWING ON PAGE WHICH MEANS THIS IS NOT BEING INVOKED WHEN
+                  URL IS: '/getLocation' like it should-->
+        <ui-gmap-google-map
+                        selectable-text
+                        ng-click="showConfirm($event)"
+                        center='map.center'
+                        zoom='map.zoom'
+                        draggable='map.draggable'
+                        dragging='map.dragging'
+                        refresh='map.refresh'
+                        options='map.options'
+                        events='map.events'
+                        pan='map.pan'>
+
+
+        <ui-gmap-marker
+        idKey='1'
+        events='map.events'
+        coords='map.center'
+        >
+       </ui-gmap-marker>
+
+    </ui-gmap-google-map>
+
+<script src='//maps.googleapis.com/maps/api/js?key=AIzaSyD4_0KuPivZyV-1EwNGmBCgLc_Z0o8Dyw8'></script>
+</div>

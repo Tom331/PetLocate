@@ -1,0 +1,30 @@
+
+<div style="height: 100%"> <!--took out: ng-if="map.center !== undefined"-->
+    <ui-gmap-google-map 
+                        center='map.center'
+                        zoom='map.zoom'
+                        draggable='map.draggable'
+                        dragging='map.dragging'
+                        refresh='map.refresh'
+                        options='map.options'
+                        events='map.events'
+                        pan='map.pan'>
+
+
+        <ui-gmap-circle 
+                        center='map.circle.center'
+                        radius='map.circle.radius'
+                        fill='map.circle.fill'
+                        stroke='map.circle.stroke'
+                        clickable='map.circle.clickable'
+                        draggable='map.circle.draggable'
+                        editable='map.circle.editable'
+                        visible='map.circle.visible'
+                        events='map.circle.events'>
+
+        </ui-gmap-circle>
+
+
+    </ui-gmap-google-map>
+<script src='//maps.googleapis.com/maps/api/js?key=AIzaSyC_XEbbw3sNm4XlLAgqMJTggeHLDUdV-pY'></script>
+</div>

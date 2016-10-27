@@ -1,0 +1,63 @@
+<md-button ng-click="goToGetLocation()" ng-disabled="checkSpeedSet == false || checkDateSet == false" sticky class="md-raised md-primary">Next</md-button>
+
+
+<h4 style="text-align: center">When did you last see your pet?</h4>
+
+<div align="center">
+
+<input value="dateDefault" type="datetime-local" ng-model="dateSelected">
+<button type="submit" ng-click="setDate(dateSelected)">Submit Date</button>
+</div>
+
+</div>
+
+
+
+
+<br><br>
+
+
+<h4 style="text-align: center">Choose the pet type that best matches your pet</h4>
+
+<div style="text-align: center">
+    
+    <button ng-model ="next"  style="height: 300px; width: 300px; display: block; margin: auto" class="button" 
+    ng-class="{active : activeMenu === 'fast'}" ng-click="activeMenu = 'fast'; setSpeed();">
+        <img height="220px" width="220px" src="images/greyhound.png" />
+   </button>
+    <h4>Fast (Avg Speed: 46km/h)</h4>
+    <p>Includes dogs such as Greyhounds and German Shepherds</p>
+    <br> <br>
+
+    <button style="height: 300px; width: 300px; display: block; margin: auto" class="button" 
+    ng-class="{active : activeMenu === 'medFast'}" ng-click="activeMenu = 'medFast'; setSpeed()">
+    <img height="220px" width="220px" src="images/greatDane.png" />
+   </button>
+    <h4>Medium/Fast (Avg Speed: 35km/h)</h4>
+    <p>Includes dogs such as Great Danes and Pitbulls</p>
+    <br> <br>
+
+    <button style="height: 300px; width: 300px; display: block; margin: auto" class="button" 
+    ng-class="{active : activeMenu === 'med'}" ng-click="activeMenu = 'med'; setSpeed()">
+    <img style="padding-right: 25px" height="220px" width="220px" src="images/husky.png" />
+   </button>
+    <h4>Medium (Avg Speed: 30km/h)</h4>
+    <p>Includes dogs such as Giant Schnauzers and Siberian Huskies</p>
+    <br> <br>
+
+    <button style="height: 300px; width: 300px; display: block; margin: auto" class="button" 
+    ng-class="{active : activeMenu === 'medSlow'}" ng-click="activeMenu = 'medSlow'; setSpeed()">
+    <img height="220px" width="220px" src="images/golden.png" />
+   </button>
+    <h4>Medium/Slow (Avg Speed: 23km/h)</h4>
+    <p>Includes dogs such as Golden Retrievers and Dachshunds</p>
+    <br> <br>
+
+    <button style="height: 300px; width: 300px; display: block; margin: auto" class="button" 
+    ng-class="{active : activeMenu === 'slow'}" ng-click="activeMenu = 'slow'; setSpeed()">
+    <img style="padding-left: 25px" height="220px" width="220px" src="images/cat.png" />
+   </button>
+    <h4>Slow (Avg Speed: 12km/h)</h4>
+    <p>Includes cast as well as dogs such as Basset Hounds and Bulldogs</p>
+    <br> <br>
+</div>

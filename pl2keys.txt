@@ -1,0 +1,3 @@
+getlocation.html: AIzaSyD4_0KuPivZyV-1EwNGmBCgLc_Z0o8Dyw8
+
+new key for the searchRadius.js .config: AIzaSyDEnX-0YFzDhB7qxj8NtEcT4SyeiHPdnsE
